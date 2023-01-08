@@ -10,7 +10,7 @@ echo -e   "\E[44;1;39m              ⇱ MENU UTAMA ⇲                      \E[0
 echo -e   "\E[44;1;39m            ⇱ SC VPS PREMIUM ⇲                    \E[0m"
 echo -e "\033[0;36m==================================================\033[m"
 echo -e   "\033[0;33m  1. •SSH & OpenVPN MENU\033[0;33m"
-echo -e   "\033[1;33m  2. •VMESS MENU\033[1;33mm"
+echo -e   "\033[1;33m  2. •VMESS MENU\033[1;33m"
 echo -e   "\033[0;33m  3. •VLESS MENU\033[0;33m"
 echo -e   "\033[1;33m  4. •SSTP MENU\033[1;33m"
 echo -e   "\033[0;33m  5. •WIREGUARD MENU\033[0;33m"
