@@ -398,6 +398,7 @@ wget -O member "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/ss
 wget -O delexp "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/ssh/delexp.sh"
 wget -O cekssh "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/ssh/cekssh.sh"
 wget -O restart "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/ssh/restart.sh"
+wget -O issue "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/ssh/issue.net"
 wget -O speedtest "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/ssh/speedtest_cli.py"
 wget -O info "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/ssh/info.sh"
 wget -O ram "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/ssh/ram.sh"
@@ -478,6 +479,7 @@ chmod +x member
 chmod +x delexp
 chmod +x cekssh
 chmod +x restart
+chmod +x issue
 chmod +x speedtest
 chmod +x info
 chmod +x about
