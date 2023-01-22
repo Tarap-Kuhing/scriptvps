@@ -270,7 +270,7 @@ accept = 445
 connect = 127.0.0.1:109
 
 [openssh]
-accept = 777
+accept = 8443
 connect = 127.0.0.1:443
 
 [openvpn]
