@@ -451,10 +451,10 @@ wget -O trmenu "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/up
 wget -O trgomenu "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/update/trgomenu.sh"
 wget -O setmenu "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/update/setmenu.sh"
 wget -O running "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/update/running.sh"
+wget -O update "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/update/update.sh"
 
 chmod +x portsshnontls
 chmod +x portsshws
-
 chmod +x sshovpnmenu
 chmod +x l2tpmenu
 chmod +x menu
@@ -516,6 +516,7 @@ chmod +x addtrgo
 chmod +x deltrgo
 chmod +x renewtrgo
 chmod +x cektrgo
+chmod +x update
 echo "0 5 * * * root clearlog && reboot" >> /etc/crontab
 echo "0 0 * * * root xp" >> /etc/crontab
 # remove unnecessary files
