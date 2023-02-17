@@ -54,16 +54,16 @@ rm -rf portvlm
 rm -rf wbmn
 rm -rf xp
 rm -rf swapkvm
-rm -rf addvmess
+rm -rf addv2ray
 rm -rf addvless
 rm -rf addtrojan
-rm -rf delvmess
+rm -rf delv2ray
 rm -rf delvless
 rm -rf deltrojan
 rm -rf cekv2ray
 rm -rf cekvless
 rm -rf cektrojan
-rm -rf renewvmess
+rm -rf renewv2ray
 rm -rf renewvless
 rm -rf renewtrojan
 rm -rf certv2ray
@@ -124,16 +124,16 @@ rm -rf portvlm
 rm -rf wbmn
 rm -rf xp
 rm -rf swapkvm
-rm -rf addvmess
+rm -rf addv2ray
 rm -rf addvless
 rm -rf addtrojan
-rm -rf delvmess
+rm -rf delv2ray
 rm -rf delvless
 rm -rf deltrojan
 rm -rf cekv2ray
 rm -rf cekvless
 rm -rf cektrojan
-rm -rf renewvmess
+rm -rf renewv2ray
 rm -rf renewvless
 rm -rf renewtrojan
 rm -rf certv2ray
@@ -175,22 +175,22 @@ wget -O /usr/bin/portvlm "https://raw.githubusercontent.com/Tarap-Kuhing/scriptv
 wget -O /usr/bin/wbmn "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/ssh/webmin.sh" && chmod +x /usr/bin/webmin
 wget -O /usr/bin/xp "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/ssh/xp.sh" && chmod +x /usr/bin/xp
 wget -O /usr/bin/swapkvm "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/ssh/swapkvm.sh" && chmod +x /usr/bin/swapkvm
-wget -O /usr/bin/addvmess "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/xray/addv2ray.sh" && chmod +x /usr/bin/addv2ray
+wget -O /usr/bin/addv2ray "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/xray/addv2ray.sh" && chmod +x /usr/bin/addv2ray
 wget -O /usr/bin/addvless "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/xray/addvless.sh" && chmod +x /usr/bin/addvless
 wget -O /usr/bin/addtrojan "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/xray/addtrojan.sh" && chmod +x /usr/bin/addtrojan
-wget -O /usr/bin/delvmess "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/xray/delv2ray.sh" && chmod +x /usr/bin/delv2ray
+wget -O /usr/bin/delv2ray "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/xray/delv2ray.sh" && chmod +x /usr/bin/delv2ray
 wget -O /usr/bin/delvless "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/xray/delvless.sh" && chmod +x /usr/bin/delvless
 wget -O /usr/bin/deltrojan "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/xray/deltrojan.sh" && chmod +x /usr/bin/deltrojan
 wget -O /usr/bin/cekv2ray "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/xray/cekv2ray.sh" && chmod +x /usr/bin/cekv2ray
 wget -O /usr/bin/cekvless "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/xray/cekvless.sh" && chmod +x /usr/bin/cekvless
 wget -O /usr/bin/cektrojan "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/xray/cektrojan.sh" && chmod +x /usr/bin/cektrojan
-wget -O /usr/bin/renewvmess "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/xray/renewv2ray.sh" && chmod +x /usr/bin/renewv2ray
+wget -O /usr/bin/renewv2ray "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/xray/renewv2ray.sh" && chmod +x /usr/bin/renewv2ray
 wget -O /usr/bin/renewvless "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/xray/renewvless.sh" && chmod +x /usr/bin/renewvless
 wget -O /usr/bin/renewtrojan "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/xray/renewtrojan.sh" && chmod +x /usr/bin/renewtrojan
 wget -O /usr/bin/certv2ray "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/xray/certv2ray.sh" && chmod +x /usr/bin/certv2ray
 wget -O /usr/bin/addtrgo "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/trojango/addtrgo.sh" && chmod +x /usr/bin/addtrgo
 wget -O /usr/bin/deltrgo "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/trojango/deltrgo.sh" && chmod +x /usr/bin/deltrgo
-wget -O /usr/bin/renewtrgo "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/trojango/renewtrgo.sh" && chmod +x /usr/bin/renewtrg
+wget -O /usr/bin/renewtrgo "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/trojango/renewtrgo.sh" && chmod +x /usr/bin/renewtrgo
 wget -O /usr/bin/cektrgo "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/trojango/cektrgo.sh" && chmod +x /usr/bin/cektrgo
 wget -O /usr/bin/portsshnontls "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/websocket/portsshnontls.sh" && chmod +x /usr/bin/portsshnontls
 wget -O /usr/bin/portsshws "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/websocket/portsshws.sh" && chmod +x /usr/bin/portsshws
@@ -258,16 +258,16 @@ chmod +x portvlm
 chmod +x wbmn
 chmod +x xp
 chmod +x swapkvm
-chmod +x addvmess
+chmod +x addv2ray
 chmod +x addvless
 chmod +x addtrojan
-chmod +x delvmess
+chmod +x delv2ray
 chmod +x delvless
 chmod +x deltrojan
 chmod +x cekv2ray
 chmod +x cekvless
 chmod +x cektrojan
-chmod +x renewvmess
+chmod +x renewv2ray
 chmod +x renewvless
 chmod +x renewtrojan
 chmod +x certv2ray
