@@ -28,7 +28,7 @@ echo -e "\033[0;36m==================================================\033[m"
 echo -e   "\E[44;1;39m           ⇱ MOD BY TARAP KUHING ⇲                \E[0m"
 echo -e   "\E[44;1;39m            ⇱ WA : 085754292950 ⇲                 \E[0m"
 echo -e "\033[0;36m==================================================\033[m"
-read -p   "Select From Options [ 1 - 14 ] : " menu
+read -p   "Select From Options [ 1 - 15 ] : " menu
 case $menu in
 1)
 clear
