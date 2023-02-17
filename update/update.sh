@@ -11,7 +11,7 @@ clear
 rm -rf menu
 rm -rf portsshnontls
 rm -rf portsshws
-rm -rf sshovpnmenu
+rm -rf sshovpn
 rm -rf l2tpmenu
 rm -rf menu
 rm -rf pptpmenu
@@ -81,7 +81,7 @@ cd /usr/bin
 rm -rf menu
 rm -rf portsshnontls
 rm -rf portsshws
-rm -rf sshovpnmenu
+rm -rf sshovpn
 rm -rf l2tpmenu
 rm -rf menu
 rm -rf pptpmenu
@@ -194,7 +194,7 @@ wget -O /usr/bin/renewtrgo "https://raw.githubusercontent.com/Tarap-Kuhing/scrip
 wget -O /usr/bin/cektrgo "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/trojango/cektrgo.sh" && chmod +x /usr/bin/cektrgo
 wget -O /usr/bin/portsshnontls "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/websocket/portsshnontls.sh" && chmod +x /usr/bin/portsshnontls
 wget -O /usr/bin/portsshws "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/websocket/portsshws.sh" && chmod +x /usr/bin/portsshws
-wget -O /usr/bin/sshovpnmenu "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/update/sshovpn.sh" && chmod +x /usr/bin/sshopn
+wget -O /usr/bin/sshovpn "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/update/sshovpn.sh" && chmod +x /usr/bin/sshopn
 wget -O /usr/bin/l2tpmenu "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/update/l2tpmenu.sh" && chmod +x /usr/bin/l2tpmenu
 wget -O /usr/bin/menu "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/update/menu.sh" && chmod +x /usr/bin/menu
 wget -O /usr/bin/pptpmenu "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/update/pptpmenu.sh" && chmod +x /usr/bin/pptpmenu
@@ -215,7 +215,7 @@ wget -O /usr/bin/ins-xray "https://raw.githubusercontent.com/Tarap-Kuhing/script
 
 chmod +x portsshnontls
 chmod +x portsshws
-chmod +x sshovpnmenu
+chmod +x sshovpn
 chmod +x l2tpmenu
 chmod +x menu
 chmod +x pptpmenu
