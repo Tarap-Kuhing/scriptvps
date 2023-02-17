@@ -64,7 +64,7 @@ chmod +x /usr/local/bin/ws-ovpn
 # Installing Service
 cat > /etc/systemd/system/ws-ovpn.service << END
 [Unit]
-Description=Python Proxy Mod By LTARAP KUHING
+Description=Python Proxy Mod By TARAP KUHING
 Documentation=https://t.me/Hendra2012
 After=network.target nss-lookup.target
 
