@@ -21,8 +21,9 @@ echo -e   "\033[0;33m  9. •PPTP MENU\033[0;33m"
 echo -e   "\033[1;33m 10. •TROJAN GFW MENU\033[1;33m"
 echo -e   "\033[0;33m 11. •TROJAN GO MENU\033[0;33m"
 echo -e   "\033[1;33m 12. •CEK SEMUA SERVICE VPN\033[1;33m"
-echo -e   "\033[0;33m 13. •Settings\033[0;33m"
-echo -e   "\033[1;33m 14. •Exit\033[1;33m"
+echo -e   "\033[0;33m 13. •SETTING\033[0;33m"
+echo -e   "\033[0;33m 14. •UPDATE [ SCRIPT ]\033[0;33m"
+echo -e   "\033[1;33m 15. •Exit\033[1;33m"
 echo -e "\033[0;36m==================================================\033[m"
 echo -e   "\E[44;1;39m           ⇱ MOD BY TARAP KUHING ⇲                \E[0m"
 echo -e   "\E[44;1;39m            ⇱ WA : 085754292950 ⇲                 \E[0m"
@@ -82,6 +83,10 @@ clear
 setmenu
 ;;
 14)
+clear
+update
+;;
+15)
 clear
 exit
 ;;
