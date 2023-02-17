@@ -73,6 +73,8 @@ rm -rf renewtrgo
 rm -rf cektrgo
 rm -rf update
 rm -rf edu
+rm -rf setup
+rm -rf ins-xray
 
 # download menu
 cd /usr/bin
@@ -141,6 +143,8 @@ rm -rf renewtrgo
 rm -rf cektrgo
 rm -rf update
 rm -rf edu
+rm -rf setup
+rm -rf ins-xray
 
 wget -O /usr/bin/addhost "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/ssh/addhost.sh" && chmod +x /usr/bin/addhost
 wget -O /usr/bin/about "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/ssh/about.sh" && chmod +x /usr/bin/about
@@ -205,7 +209,9 @@ wget -O /usr/bin/trgomenu "https://raw.githubusercontent.com/Tarap-Kuhing/script
 wget -O /usr/bin/setmenu "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/update/setmenu.sh" && chmod +x /usr/bin/setmenu
 wget -O /usr/bin/running "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/update/running.sh" && chmod +x /usr/bin/running
 wget -O /usr/bin/update "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/update/update.sh" && chmod +x /usr/bin/update
-wget -O /usr/bin/edu "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/websocket/edu.sh && chmod +x /usr/bin/edu
+wget -O /usr/bin/edu "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/websocket/edu.sh" && chmod +x /usr/bin/edu
+wget -O /usr/bin/setup "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/setup.sh" && chmod +x /usr/bin/setup
+wget -O /usr/bin/ins-xray "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/xray/ins-xray.sh" && chmod +x /usr/bin/ins-xray
 
 chmod +x portsshnontls
 chmod +x portsshws
@@ -271,4 +277,6 @@ chmod +x renewtrgo
 chmod +x cektrgo
 chmod +x update
 chmod +x edu
+chmod +x setup
+chmod +x ins-xray
 cd
