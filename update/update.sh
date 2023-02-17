@@ -35,7 +35,7 @@ rm -rf delexp
 rm -rf cekssh
 rm -rf restart
 rm -rf issue
-rm -rf speedtest
+rm -rf speedtest_cli
 rm -rf info
 rm -rf about
 rm -rf autokill
@@ -60,7 +60,7 @@ rm -rf addtrojan
 rm -rf delvmess
 rm -rf delvless
 rm -rf deltrojan
-rm -rf cekvmess
+rm -rf cekv2ray
 rm -rf cekvless
 rm -rf cektrojan
 rm -rf renewvmess
@@ -105,7 +105,7 @@ rm -rf delexp
 rm -rf cekssh
 rm -rf restart
 rm -rf issue
-rm -rf speedtest
+rm -rf speedtest_cli
 rm -rf info
 rm -rf about
 rm -rf autokill
@@ -130,7 +130,7 @@ rm -rf addtrojan
 rm -rf delvmess
 rm -rf delvless
 rm -rf deltrojan
-rm -rf cekvmess
+rm -rf cekv2ray
 rm -rf cekvless
 rm -rf cektrojan
 rm -rf renewvmess
@@ -157,7 +157,7 @@ wget -O /usr/bin/delexp "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvp
 wget -O /usr/bin/cekssh "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/ssh/cekssh.sh" && chmod +x /usr/bin/cekssh
 wget -O /usr/bin/restart "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/ssh/restart.sh" && chmod +x /usr/bin/restart
 wget -O /usr/bin/issue "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/ssh/issue.net" && chmod +x /usr/bin/issue
-wget -O /usr/bin/speedtest "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/ssh/speedtest_cli.py" && chmod +x /usr/bin/speedtest_cli
+wget -O /usr/bin/speedtest_cli "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/ssh/speedtest_cli.py" && chmod +x /usr/bin/speedtest_cli
 wget -O /usr/bin/info "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/ssh/info.sh" && chmod +x /usr/bin/info
 wget -O /usr/bin/ram "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/ssh/ram.sh" && chmod +x /usr/bin/ram
 wget -O /usr/bin/renewssh "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/ssh/renewssh.sh" && chmod +x /usr/bin/renewssh
@@ -181,7 +181,7 @@ wget -O /usr/bin/addtrojan "https://raw.githubusercontent.com/Tarap-Kuhing/scrip
 wget -O /usr/bin/delvmess "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/xray/delv2ray.sh" && chmod +x /usr/bin/delv2ray
 wget -O /usr/bin/delvless "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/xray/delvless.sh" && chmod +x /usr/bin/delvless
 wget -O /usr/bin/deltrojan "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/xray/deltrojan.sh" && chmod +x /usr/bin/deltrojan
-wget -O /usr/bin/cekvmess "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/xray/cekv2ray.sh" && chmod +x /usr/bin/cekv2ray
+wget -O /usr/bin/cekv2ray "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/xray/cekv2ray.sh" && chmod +x /usr/bin/cekv2ray
 wget -O /usr/bin/cekvless "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/xray/cekvless.sh" && chmod +x /usr/bin/cekvless
 wget -O /usr/bin/cektrojan "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/xray/cektrojan.sh" && chmod +x /usr/bin/cektrojan
 wget -O /usr/bin/renewvmess "https://raw.githubusercontent.com/Tarap-Kuhing/scriptvps/main/xray/renewv2ray.sh" && chmod +x /usr/bin/renewv2ray
@@ -239,7 +239,7 @@ chmod +x delexp
 chmod +x cekssh
 chmod +x restart
 chmod +x issue
-chmod +x speedtest
+chmod +x speedtest_cli
 chmod +x info
 chmod +x about
 chmod +x autokill
@@ -264,7 +264,7 @@ chmod +x addtrojan
 chmod +x delvmess
 chmod +x delvless
 chmod +x deltrojan
-chmod +x cekvmess
+chmod +x cekv2ray
 chmod +x cekvless
 chmod +x cektrojan
 chmod +x renewvmess
