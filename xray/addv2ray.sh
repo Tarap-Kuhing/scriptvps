@@ -28,49 +28,65 @@ until [[ $user =~ ^[a-zA-Z0-9_]+$ && ${CLIENT_EXISTS} == '0' ]]; do
 		fi
 	done
 uuid=$(cat /proc/sys/kernel/random/uuid)
-read -p "Expired (Days) : " masaaktif
-hariini=`date -d "0 days" +"%Y-%m-%d"`
+read -p "Expired (days): " masaaktif
+harini=`date -d "0 days" +"%Y-%m-%d"`
 exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
-sed -i '/#xray-vmess-tls$/a\### '"$user $exp"'\
-},{"id": "'""$uuid""'"' /etc/xray/config.json
-sed -i '/#xray-vmess-nontls$/a\### '"$user $exp"'\
-},{"id": "'""$uuid""'"' /etc/xray/config.json
-cat>/etc/xray/vmess-$user-tls.json<<EOF
+sed -i '/#vmess$/a\#vm '"$user $exp"'\
+},{"id": "'""$uuid""'","alterId": '"0"',"email": "'""$user""'"' /etc/xray/config.json
+exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
+sed -i '/#vmessgrpc$/a\#vmg '"$user $exp $uuid"'\
+},{"id": "'""$uuid""'","alterId": '"0"',"email": "'""$user""'"' /etc/xray/config.json
+asu=`cat<<EOF
       {
       "v": "2",
       "ps": "${user}",
       "add": "${domain}",
-      "port": "${tls}",
+      "port": "443",
       "id": "${uuid}",
       "aid": "0",
       "net": "ws",
       "path": "/vmess",
       "type": "none",
-      "host": "",
+      "host": "${domain}",
       "tls": "tls"
 }
-EOF
-cat>/etc/xray/vmess-$user-nontls.json<<EOF
+EOF`
+ask=`cat<<EOF
       {
       "v": "2",
       "ps": "${user}",
       "add": "${domain}",
-      "port": "${nontls}",
+      "port": "80",
       "id": "${uuid}",
       "aid": "0",
       "net": "ws",
       "path": "/vmess",
       "type": "none",
-      "host": "",
+      "host": "${domain}",
       "tls": "none"
 }
-EOF
+EOF`
+grpc=`cat<<EOF
+      {
+      "v": "2",
+      "ps": "${user}",
+      "add": "${domain}",
+      "port": "443",
+      "id": "${uuid}",
+      "aid": "0",
+      "net": "grpc",
+      "path": "vmess-grpc",
+      "type": "none",
+      "host": "${domain}",
+      "tls": "tls"
+}
+EOF`
 vmess_base641=$( base64 -w 0 <<< $vmess_json1)
 vmess_base642=$( base64 -w 0 <<< $vmess_json2)
-xrayv2ray1="vmess://$(base64 -w 0 /etc/xray/vmess-$user-tls.json)"
-xrayv2ray2="vmess://$(base64 -w 0 /etc/xray/vmess-$user-nontls.json)"
-rm -rf /etc/xray/vmess-$user-tls.json
-rm -rf /etc/xray/vmess-$user-nontls.json
+vmess_base643=$( base64 -w 0 <<< $vmess_json3)
+vmesslink1="vmess://$(echo $asu | base64 -w 0)"
+vmesslink2="vmess://$(echo $ask | base64 -w 0)"
+vmesslink3="vmess://$(echo $grpc | base64 -w 0)"
 systemctl restart xray.service
 service cron restart
 clear
@@ -89,8 +105,8 @@ echo -e "\033[0;34mPath        : /vmess\033[0;34m"
 echo -e "\033[0;34mCreated     : $hariini\033[0;34m"
 echo -e "\033[0;34mExpired     : $exp\033[0;34m"
 echo -e "\033[0;31m===================================================\033[0;31m"
-echo -e "\033[1;33mLink TLS    : ${xrayv2ray1}\033[1;33m"
+echo -e "\033[1;33mLink TLS    : ${vmesslink1}\033[1;33m"
 echo -e "\033[0;31m===================================================\033[0;31m"
-echo -e "\033[1;33mLink No TLS : ${xrayv2ray2}\033[1;33m"
+echo -e "\033[1;33mLink No TLS : ${vmesslink2}\033[1;33m"
 echo -e "\033[0;31m===================================================\033[0;31m"
 echo -e "\033[1;33mScript Mod By TARAP KUHING\033[1;33m"
